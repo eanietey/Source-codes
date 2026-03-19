@@ -1,4 +1,4 @@
-import Message from '../models/Message.js'
+import Message from '../data/Message.js'
 
 const messages = [
   new Message('tbarden', 'Thomas', 'Barden', 'yo leslie you up?'),

@@ -14,7 +14,7 @@
 .view{
   height: 100vh;
   width: 100%;
-  background-color: #e0f2fe; /* Theme light blue */
+  background-color: #e0f2fe;
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -25,7 +25,7 @@
   width: 300px;
   height: 300px;
   border-radius: 20px;
-  background-color: #0ea5e9; /* Theme primary blue */
+  background-color: #0ea5e9;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,7 +44,7 @@
 .rapp-small {
   font-size: 60px;
   font-weight: 600;
-  margin-top: 40px; /* Align visually near the baseline of the F */
+  margin-top: 40px;
   letter-spacing: 1px;
 }
 </style>

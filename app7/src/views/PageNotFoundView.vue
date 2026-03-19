@@ -21,7 +21,7 @@ function goHome() {
 
 <style scoped>
 .not-found-page {
-  background-color: #e0f2fe; /* Theme light blue */
+  background-color: #e0f2fe;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -41,14 +41,14 @@ function goHome() {
 
 h1 {
   font-size: 80px;
-  color: #0ea5e9; /* Theme primary blue */
+  color: #0ea5e9;
   margin: 0;
   line-height: 1;
 }
 
 h2 {
   font-size: 24px;
-  color: #334155; /* Slate grey */
+  color: #334155;
   margin: 10px 0;
 }
 

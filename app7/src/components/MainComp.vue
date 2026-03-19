@@ -13,7 +13,7 @@ const selectedFriend = computed(() => userStore.selectedFriend)
 
 const finalFilteredMessages = computed(() => {
   if (!selectedFriend.value) return []
-  // Actual filter for user and friend:
+
   return store.messages.filter(msg => {
     return (
       msg.username === userStore.user.username ||
@@ -24,11 +24,9 @@ const finalFilteredMessages = computed(() => {
   })
 })
 
-// Use the correct array
+
 const displayMessages = computed(() => {
    if (!selectedFriend.value) return []
-   // As a fallback to allow the sample messages to appear, we don't strictly filter out the others if they aren't part of it, or you know what, let's just use finalFilteredMessages to be safe.
-   // But wait, if they log in as 'emmanuel', and select 'Alice', it's empty. Which is factually correct.
    return finalFilteredMessages.value
 })
 
@@ -111,7 +109,7 @@ function isOwn(msg) {
         </button>
       </div>
     </div>
-    
+
     <div v-else class="no-selection">
       <h2>Welcome {{ userStore.user.username }}</h2>
       <p>Select a friend from the sidebar to start chatting.</p>

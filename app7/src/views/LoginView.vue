@@ -175,7 +175,7 @@ function login() {
   gap: 15px;
   width: 250px;
   height: inherit;
-  background-color: #0ea5e9; /* Blue */
+  background-color: #0ea5e9;
   color: white;
   border-radius: 8px;
   flex-direction: column;
