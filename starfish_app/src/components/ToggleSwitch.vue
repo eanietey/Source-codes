@@ -1,5 +1,4 @@
 <script setup>
-// Toggle switch for password visibility - emits change event
 </script>
 
 <template>

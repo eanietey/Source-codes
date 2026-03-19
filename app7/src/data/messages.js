@@ -1,0 +1,38 @@
+import Message from '../models/Message.js'
+
+const messages = [
+  new Message('tbarden', 'Thomas', 'Barden', 'yo leslie you up?'),
+  new Message('ldotse', 'Leslie', 'Dotse', 'yeah whats good'),
+  new Message('tbarden', 'Thomas', 'Barden', 'bro we really need to start that csci 232 assignment like we have been saying we would do it for days now and the deadline is literally next week'),
+  new Message('ldotse', 'Leslie', 'Dotse', 'i know i know lol i keep telling myself ill start tomorrow and then tomorrow comes and i dont do anything'),
+  new Message('tbarden', 'Thomas', 'Barden', 'same honestly its been like 4 days of saying that'),
+  new Message('ldotse', 'Leslie', 'Dotse', 'ok so what exactly do we even have to do again? i remember something about vue router and pinia but i didnt really pay attention in class that day'),
+  new Message('tbarden', 'Thomas', 'Barden', 'so basically we gotta build a messaging app with vue and we need to use pinia for state management and vue router to switch between a login page and the actual chat page'),
+  new Message('ldotse', 'Leslie', 'Dotse', 'oh ok that doesnt sound too bad actually'),
+  new Message('tbarden', 'Thomas', 'Barden', 'yeah but theres more. we need a Message class and like 30 messages of simulation data and a store with actions to add messages and redact them'),
+  new Message('ldotse', 'Leslie', 'Dotse', 'redact messages? what does that even mean'),
+  new Message('tbarden', 'Thomas', 'Barden', 'like you can hide your own messages and then unhide them. so the text disappears and shows something like message hidden instead'),
+  new Message('ldotse', 'Leslie', 'Dotse', 'ohh ok thats kinda cool actually. so its like instagram unsend but you can undo it?'),
+  new Message('tbarden', 'Thomas', 'Barden', 'yeah pretty much. and the login page just lets you pick which user you are from the simulation data'),
+  new Message('ldotse', 'Leslie', 'Dotse', 'got it. so do you wanna split the work or just do it together on a call?'),
+  new Message('tbarden', 'Thomas', 'Barden', 'i think we should just hop on a call honestly because last time we split work it took forever to merge everything and nothing worked together properly and we spent more time debugging than actually coding'),
+  new Message('ldotse', 'Leslie', 'Dotse', 'lmaooo yeah that was a disaster. ok lets do it together then'),
+  new Message('tbarden', 'Thomas', 'Barden', 'when are you free? i have class til 2 today'),
+  new Message('ldotse', 'Leslie', 'Dotse', 'im free after 3. wanna meet at the library?'),
+  new Message('tbarden', 'Thomas', 'Barden', 'bet. third floor?'),
+  new Message('ldotse', 'Leslie', 'Dotse', 'yeah the quiet section so we can actually focus for once'),
+  new Message('tbarden', 'Thomas', 'Barden', 'facts. also did you check if we need to use the composition api or options api? professor chen is picky about that stuff'),
+  new Message('ldotse', 'Leslie', 'Dotse', 'pretty sure she said composition api with script setup. thats what we used in the last demo too so it should be fine'),
+  new Message('tbarden', 'Thomas', 'Barden', 'ok cool. and we need to make sure the messages are reactive right? like when you add a new one it should just show up automatically without refreshing'),
+  new Message('ldotse', 'Leslie', 'Dotse', 'yeah thats the whole point of pinia. you throw everything in a store and vue handles the reactivity for you so the ui updates on its own when the data changes'),
+  new Message('tbarden', 'Thomas', 'Barden', 'nice. i watched a youtube video about it last night and it actually makes sense once you see it in action'),
+  new Message('ldotse', 'Leslie', 'Dotse', 'bro you watched a video but still didnt start the assignment lmaooo'),
+  new Message('tbarden', 'Thomas', 'Barden', 'listen... research is part of the process ok 😂'),
+  new Message('ldotse', 'Leslie', 'Dotse', 'sure sure. ok so ill bring my laptop and we can set up the project first and then work through each part'),
+  new Message('tbarden', 'Thomas', 'Barden', 'sounds good. we should probably start with the data model and the store since everything else depends on that'),
+  new Message('ldotse', 'Leslie', 'Dotse', 'agreed. then the login page then the messenger. router is easy we can do that last'),
+  new Message('tbarden', 'Thomas', 'Barden', 'perfect. ok im gonna go eat lunch real quick. see you at 3'),
+  new Message('ldotse', 'Leslie', 'Dotse', 'bet see you then. and this time we are actually doing it no more procrastinating'),
+]
+
+export default messages
