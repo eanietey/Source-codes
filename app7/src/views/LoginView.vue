@@ -64,6 +64,8 @@ function togglePasswordVisibility(event){
 }
 
 function login() {
+  if (hasErrors.value) return;
+
   const foundUser = users.find(
     user =>
       user.username === username.value &&
@@ -78,7 +80,7 @@ function login() {
     router.push('/homepage')
 
   } else {
-    alert('Invalid username or password')
+    alert('Invalid credentials')
   }
 }
 
